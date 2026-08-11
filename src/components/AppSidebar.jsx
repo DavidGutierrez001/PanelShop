@@ -106,39 +106,6 @@ export function AppSidebar() {
           beta: true,
           disabled: false,
         },
-        {
-          label: "Categorias",
-          path: "/dashboard/inventario/categorias",
-          icon: <ListSortAscending className="size-4" />,
-          beta: true,
-          disabled: true,
-        },
-        {
-          label: "Stock",
-          path: "/dashboard/inventario/stock",
-          icon: <ListCheck className="size-4" />,
-          beta: true,
-          disabled: true,
-        },
-      ],
-    },
-    {
-      section: "Logística",
-      items: [
-        {
-          label: "Envíos",
-          path: "/dashboard/logistica/envios",
-          icon: <Truck className="size-4" />,
-          beta: true,
-          disabled: true,
-        },
-        {
-          label: "Devoluciones",
-          path: "/dashboard/logistica/devoluciones",
-          icon: <Undo2 className="size-4" />,
-          beta: true,
-          disabled: true,
-        },
       ],
     },
   ];
@@ -239,7 +206,7 @@ export function AppSidebar() {
                   <DropdownMenuLabel>
                     Cuenta
                   </DropdownMenuLabel>
-                  
+
                   <Dialog open={logoutDialogOpen} onOpenChange={setLogoutDialogOpen}>
                     <DialogTrigger asChild>
                       <DropdownMenuItem
